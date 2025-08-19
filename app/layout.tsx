@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import type { Viewport } from "next"
 import { Montserrat } from "next/font/google"
 import { Open_Sans } from "next/font/google"
 import "./globals.css"
@@ -23,6 +24,11 @@ export const metadata: Metadata = {
   description:
     "Te ajudo a engravidar naturalmente e ter uma gestação saudável após os 30 anos. Nutrição especializada em fertilidade.",
   generator: "v0.app",
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
 
 export default function RootLayout({
